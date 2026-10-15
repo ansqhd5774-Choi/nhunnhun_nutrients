@@ -64,4 +64,4 @@
 - 표에서 가장 먼저 보이는 정보가 `식품명 + 함유량`인가?
 - 작성자의 조사 과정 설명이 독자용 정보보다 길어지지 않았는가?
 
-`nhunnhun_blog`의 기술 검사는 명백한 구조 오류만 차단한다. 식품 선택과 설명 방식은 `PROJECT_INSTRUCTIONS.txt` R10을 따른다.
+`nhunnhun_blog`의 기술 검사는 명백한 구조 오류만 차단한다. 식품 선택과 설명 방식은 `PROJECT_INSTRUCTIONS.txt` R11을 따른다.

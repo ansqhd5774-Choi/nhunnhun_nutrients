@@ -2,11 +2,11 @@
 
 이 저장소는 `nhunnhun.tistory.com`의 영양소·기능성 성분 원고와 편집 기준을 보관합니다.
 
-- 최우선 편집 기준: [PROJECT_INSTRUCTIONS.txt](PROJECT_INSTRUCTIONS.txt) — **R10**
+- 최우선 편집 기준: [PROJECT_INSTRUCTIONS.txt](PROJECT_INSTRUCTIONS.txt) — **R11**
 - 식품원·함량 상세 규칙: [docs/NUTRIENT_FOOD_SOURCE_RANKING_GUARD_20261015.md](docs/NUTRIENT_FOOD_SOURCE_RANKING_GUARD_20261015.md)
 - 실제 제출·공개 검증: [nhunnhun_blog](https://github.com/ansqhd5774-Choi/nhunnhun_blog)의 공통 direct/SP1 러너
 
-## R10 핵심 원칙
+## R11 핵심 원칙
 
 영양소 글은 **한국 일반 독자가 실제로 먹고 선택하는 데 필요한 정보를 빠르게 이해하는 건강·영양 글**입니다.
 
@@ -35,7 +35,7 @@
 
 ②는 독자가 **한 달 정도 먹었을 때 몸에서 어떤 변화를 기대할 수 있는지와 누구에게 유용한지** 바로 이해하게 작성합니다.
 
-필요한 경우 대상·섭취량·기간·변화를 쉬운 문장으로 제시하되 참가자 수·시험 방식·통계값 같은 자료 설명을 본문의 중심으로 만들지 않습니다.
+필요한 경우 대상·섭취량·기간·변화를 쉬운 문장으로 제시하고, 독자가 생활에서 이해할 수 있는 의미를 함께 설명합니다.
 
 ## ④ 작성 핵심
 
