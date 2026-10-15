@@ -8,8 +8,8 @@
 독자는 PC와 모바일 모두에서 `항목명 → 핵심 문장 → 설명 → 필요한 주의` 순서로 빠르게 훑을 수 있어야 한다.
 
 ## 2. 기본 구조
-- PC: `120px 라벨 + 본문` 2열 구조의 세로 리스트
-- 태블릿: 라벨 폭을 약 105px로 줄이고 본문 폭을 확보
+- PC: `170px 라벨 + 본문` 2열 구조의 세로 리스트
+- 태블릿: 라벨 폭을 약 150px로 줄이고 본문 폭을 확보
 - 모바일 600px 이하: 1열로 전환해 `라벨 → 본문` 순서로 쌓기
 - 항목 간 간격은 10~12px 수준
 - 카드 배경은 흰색 또는 매우 연한 톤을 사용하고, 왼쪽 4px 색상선으로 항목 성격을 구분
@@ -24,7 +24,11 @@
 색은 장식이 아니라 정보 역할 구분에만 사용한다.
 
 ## 4. 라벨과 본문
-- 왼쪽 라벨은 짧은 항목명만 사용하고 pill 형태로 표시한다.
+- 왼쪽 라벨은 **원형·pill 테두리를 사용하지 않고 일반 제목형 텍스트**로 표시한다.
+- 라벨은 본문보다 먼저 읽히도록 PC 기준 약 17px, 태블릿·모바일 약 16px, 굵기 800 수준을 사용한다.
+- 라벨 글꼴은 시스템 한글 글꼴 계열을 우선하며 `system-ui / Apple SD Gothic Neo / Noto Sans KR / Malgun Gothic` 순으로 적용한다.
+- 라벨 색은 카드 왼쪽 색상선의 의미와 맞춰 blue·orange·green·red 계열로 구분한다.
+- 라벨 뒤에 별도 배경색·둥근 외곽선·캡슐형 패딩을 두지 않는다.
 - 본문 상단에는 필요할 때만 16~17px의 핵심 제목을 둔다.
 - 긴 설명은 한 카드 안에서 2~4문장 이내를 기본으로 한다.
 - 기존 원고에 없는 정보를 디자인을 이유로 추가하지 않는다.
@@ -48,23 +52,38 @@
 ```css
 .effect-item{
   display:grid;
-  grid-template-columns:120px minmax(0,1fr);
-  gap:18px;
+  grid-template-columns:170px minmax(0,1fr);
+  gap:20px;
   align-items:start;
+}
+
+.effect-item h3{
+  margin:0;
+  padding:2px 0 0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  font-size:17px;
+  font-weight:800;
+  line-height:1.55;
+  word-break:keep-all;
 }
 
 @media (max-width:900px){
   .effect-item{
-    grid-template-columns:105px minmax(0,1fr);
-    gap:14px;
+    grid-template-columns:150px minmax(0,1fr);
+    gap:16px;
   }
+  .effect-item h3{font-size:16px;}
 }
 
 @media (max-width:600px){
   .effect-item{
     grid-template-columns:1fr;
-    gap:7px;
+    gap:6px;
   }
+  .effect-item h3{font-size:16px;}
 }
 ```
 
