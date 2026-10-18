@@ -2,15 +2,17 @@
 
 이 저장소는 `nhunnhun.tistory.com`의 영양소·기능성 성분 원고와 편집 기준을 보관합니다.
 
-- 최우선 편집 기준: [PROJECT_INSTRUCTIONS.txt](PROJECT_INSTRUCTIONS.txt) — **R15**
+- 최우선 편집 기준: [PROJECT_INSTRUCTIONS.txt](PROJECT_INSTRUCTIONS.txt) — **R17**
 - 형광펜·자연문체 세부 기준: [docs/NUTRIENT_HIGHLIGHT_NATURAL_STYLE_STANDARD_20261016.md](docs/NUTRIENT_HIGHLIGHT_NATURAL_STYLE_STANDARD_20261016.md) — **R14**
 - 추천 제품 TOP3 기준: [docs/NUTRIENT_PRODUCT_TOP3_STANDARD_20261016.md](docs/NUTRIENT_PRODUCT_TOP3_STANDARD_20261016.md)
 - 식품원·함량 상세 규칙: [docs/NUTRIENT_FOOD_SOURCE_RANKING_GUARD_20261015.md](docs/NUTRIENT_FOOD_SOURCE_RANKING_GUARD_20261015.md)
 - 실제 제출·공개 검증: [nhunnhun_blog](https://github.com/ansqhd5774-Choi/nhunnhun_blog)의 공통 direct/SP1 러너
 
-## R15 핵심 원칙
+## R17 핵심 원칙
 
 영양소 글은 **한국 일반 독자가 실제로 먹고 선택하는 데 필요한 정보를 빠르게 이해하는 건강·영양 글**입니다.
+
+최우선 전달 방향은 **근거 있는 긍정적 기대효과 → 지속 가능한 식사·섭취·생활 실천 → 필요한 주의사항**입니다. 반복적인 부정·한계 문구가 확인된 건강상 이점과 실천 행동을 가리지 않도록 합니다. 안전과 근거의 정확성은 그대로 유지합니다.
 
 기본 문장 흐름은 `쉬운 답 → 필요한 숫자·조건 → 실제 행동`입니다. 고정 글자수는 두지 않지만 각 소제목의 질문은 끝까지 답합니다.
 
