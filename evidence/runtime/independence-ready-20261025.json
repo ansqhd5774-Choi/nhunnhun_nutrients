@@ -1,0 +1,15 @@
+{
+  "status": "RUNTIME_READINESS_PASS",
+  "key": "nutrients",
+  "repository": "ansqhd5774-Choi/nhunnhun_nutrients",
+  "category": "영양소",
+  "runId": 40181013772,
+  "runUrl": "https://github.com/ansqhd5774-Choi/nhunnhun_nutrients/actions/runs/40181013772",
+  "sourceCommit": "d697db9a851104280d2425c685936fad56d16395",
+  "host": "DESKTOP-N62L0NG",
+  "lockAcquired": true,
+  "chromeReady": true,
+  "publicationAttempted": false,
+  "publishEnabled": true,
+  "articleSubmissionVerified": false
+}
