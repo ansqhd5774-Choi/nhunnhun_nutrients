@@ -4,7 +4,7 @@
 ## 1. 적용 범위와 우선순위
 - 대상은 https://nhunnhun.tistory.com/ 의 영양소 카테고리다.
 - 영양소의 내용·검색 의도·소제목·문체·표·강조·이미지·내부링크 기준은 이 파일을 최우선 편집 기준으로 한다.
-- 실제 티스토리 제출·공개 검증은 ansqhd5774-Choi/nhunnhun_blog의 공통 direct/SP1 기술 계약과 workflow를 따른다.
+- 실제 제출·공개 검증은 이 저장소의 publishing/ 코드와 .github/workflows/만 사용한다.
 - 다른 저장소·다른 카테고리·legacy 원고·과거 자동작성 프롬프트를 영양소 편집 기준으로 사용하지 않는다.
 - 사용자 지시가 이 문서보다 우선한다. 기존 URL·articleId·미변경 원고·원장은 보존한다.
 
@@ -224,3 +224,12 @@
 - 작성·내용 검토·기술 검사·GitHub 저장 확인·실행·제출·공개 검증을 구분한다.
 - 확인하지 않은 결과를 PASS라고 하지 않는다.
 - 최종 보고는 source SHA·Run·공개 URL·원장 상태·중요한 문제만 간결하게 작성한다.
+
+## 저장소 독립 실행 — 2026-10-25
+- 작업 시작 시 repository-scope.json의 repository=ansqhd5774-Choi/nhunnhun_nutrients, category=영양소를 고정한다. 요청 키워드와 sourceId를 끝까지 유지한다.
+- PROJECT_INSTRUCTIONS.txt와 로컬 SUBTOPIC_STANDARD.md가 편집 기준이며 다른 카테고리의 AGENTS.md·README·프로젝트 지침을 읽어 기준을 바꾸지 않는다.
+- 공통 기준·코드는 이 저장소 안에 독립 복제돼 있다. 외부 저장소 checkout, repository_dispatch, 원고 전달, 원장 대리 저장은 사용하지 않는다.
+- 신규는 posts/, 수정은 updates/ 한 건을 명시한다. 다른 주제 성공 결과나 최근 실행을 현재 요청의 결과로 보고하지 않는다.
+- 제출은 publishing/writer-session.mjs를 통해 수행한다. 네 저장소는 같은 물리 Windows 호스트를 사용하며 ProgramData의 원자 잠금을 공유한다. GitHub concurrency만으로 저장소 간 직렬화가 된다고 하지 않는다.
+- 러너 등록과 TISTORY_WRITER_HOST 확인 전에는 실제 제출하지 않는다. 잠금이 남으면 다른 실행의 종료·제출 상태를 확인하기 전 삭제·탈취하지 않는다.
+- 과거 handoffs/·drafts/는 보존 자료다. 자동 전달 경로가 아니다. 실제 신규·수정 실행은 이 저장소 Actions와 원장만 추적한다.
